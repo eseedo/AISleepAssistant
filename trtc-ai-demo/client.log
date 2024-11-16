@@ -1,0 +1,397 @@
+2024-11-15 16:40:58.230 | INFO     | __main__:<module>:251 - 
+    ***************************************************************
+                            start client.py
+    ***************************************************************
+    
+2024-11-15 16:42:18.796 | INFO     | __main__:actions:206 - <Request 'http://127.0.0.1:8080/action' [POST]> Host: 127.0.0.1:8080
+Connection: keep-alive
+Content-Length: 63
+Sec-Ch-Ua-Platform: "macOS"
+Action: join
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://127.0.0.1:8080
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://127.0.0.1:8080/conversation
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ b'{"userid":"bfdi","robot_userid":"bfdi_robot","msg_type":"trtc"}'
+2024-11-15 16:42:18.796 | INFO     | __main__:handle_join:70 - handle_join recv json {'userid': 'bfdi', 'robot_userid': 'bfdi_robot', 'msg_type': 'trtc', 'Action': 'join'}
+2024-11-15 16:42:18.798 | INFO     | __main__:actions:236 - ConversationAI join exception Traceback (most recent call last):
+  File "/Users/hanwang/Documents/iDevelop/Github/trtc-conversation-ai-demo/main.py", line 208, in actions
+    return handle_join(body_json)
+  File "/Users/hanwang/Documents/iDevelop/Github/trtc-conversation-ai-demo/main.py", line 78, in handle_join
+    user_sig = gen_user_sig(sdkappid, secret, userid)
+  File "/Users/hanwang/Documents/iDevelop/Github/trtc-conversation-ai-demo/main.py", line 37, in gen_user_sig
+    sig = api.gen_sig(userid)
+  File "/Users/hanwang/Documents/iDevelop/Github/trtc-conversation-ai-demo/sleepassistant/lib/python3.9/site-packages/TLSSigAPIv2.py", line 78, in gen_sig
+    return self.__gen_sig(identifier, expire, None)
+  File "/Users/hanwang/Documents/iDevelop/Github/trtc-conversation-ai-demo/sleepassistant/lib/python3.9/site-packages/TLSSigAPIv2.py", line 60, in __gen_sig
+    m["TLS.sdkappid"] = int(self.__sdkappid)
+ValueError: invalid literal for int() with base 10: '160001xxxxx'
+
+2024-11-15 16:42:26.521 | INFO     | __main__:actions:206 - <Request 'http://127.0.0.1:8080/action' [POST]> Host: 127.0.0.1:8080
+Connection: keep-alive
+Content-Length: 63
+Sec-Ch-Ua-Platform: "macOS"
+Action: join
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://127.0.0.1:8080
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://127.0.0.1:8080/conversation
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ b'{"userid":"bfdi","robot_userid":"bfdi_robot","msg_type":"trtc"}'
+2024-11-15 16:42:26.521 | INFO     | __main__:handle_join:70 - handle_join recv json {'userid': 'bfdi', 'robot_userid': 'bfdi_robot', 'msg_type': 'trtc', 'Action': 'join'}
+2024-11-15 16:42:26.522 | INFO     | __main__:actions:236 - ConversationAI join exception Traceback (most recent call last):
+  File "/Users/hanwang/Documents/iDevelop/Github/trtc-conversation-ai-demo/main.py", line 208, in actions
+    return handle_join(body_json)
+  File "/Users/hanwang/Documents/iDevelop/Github/trtc-conversation-ai-demo/main.py", line 78, in handle_join
+    user_sig = gen_user_sig(sdkappid, secret, userid)
+  File "/Users/hanwang/Documents/iDevelop/Github/trtc-conversation-ai-demo/main.py", line 37, in gen_user_sig
+    sig = api.gen_sig(userid)
+  File "/Users/hanwang/Documents/iDevelop/Github/trtc-conversation-ai-demo/sleepassistant/lib/python3.9/site-packages/TLSSigAPIv2.py", line 78, in gen_sig
+    return self.__gen_sig(identifier, expire, None)
+  File "/Users/hanwang/Documents/iDevelop/Github/trtc-conversation-ai-demo/sleepassistant/lib/python3.9/site-packages/TLSSigAPIv2.py", line 60, in __gen_sig
+    m["TLS.sdkappid"] = int(self.__sdkappid)
+ValueError: invalid literal for int() with base 10: '160001xxxxx'
+
+2024-11-15 16:42:58.946 | INFO     | __main__:actions:206 - <Request 'http://192.168.1.5:8080/action' [POST]> Host: 192.168.1.5:8080
+Connection: keep-alive
+Content-Length: 63
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+Content-Type: application/json
+Action: join
+Accept: */*
+Origin: http://192.168.1.5:8080
+Referer: http://192.168.1.5:8080/conversation
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+ b'{"userid":"hbic","robot_userid":"hbic_robot","msg_type":"trtc"}'
+2024-11-15 16:42:58.947 | INFO     | __main__:handle_join:70 - handle_join recv json {'userid': 'hbic', 'robot_userid': 'hbic_robot', 'msg_type': 'trtc', 'Action': 'join'}
+2024-11-15 16:42:58.948 | INFO     | __main__:actions:236 - ConversationAI join exception Traceback (most recent call last):
+  File "/Users/hanwang/Documents/iDevelop/Github/trtc-conversation-ai-demo/main.py", line 208, in actions
+    return handle_join(body_json)
+  File "/Users/hanwang/Documents/iDevelop/Github/trtc-conversation-ai-demo/main.py", line 78, in handle_join
+    user_sig = gen_user_sig(sdkappid, secret, userid)
+  File "/Users/hanwang/Documents/iDevelop/Github/trtc-conversation-ai-demo/main.py", line 37, in gen_user_sig
+    sig = api.gen_sig(userid)
+  File "/Users/hanwang/Documents/iDevelop/Github/trtc-conversation-ai-demo/sleepassistant/lib/python3.9/site-packages/TLSSigAPIv2.py", line 78, in gen_sig
+    return self.__gen_sig(identifier, expire, None)
+  File "/Users/hanwang/Documents/iDevelop/Github/trtc-conversation-ai-demo/sleepassistant/lib/python3.9/site-packages/TLSSigAPIv2.py", line 60, in __gen_sig
+    m["TLS.sdkappid"] = int(self.__sdkappid)
+ValueError: invalid literal for int() with base 10: '160001xxxxx'
+
+2024-11-15 16:54:00.964 | INFO     | __main__:<module>:251 - 
+    ***************************************************************
+                            start client.py
+    ***************************************************************
+    
+2024-11-15 16:55:55.234 | INFO     | __main__:actions:206 - <Request 'http://127.0.0.1:8080/action' [POST]> Host: 127.0.0.1:8080
+Connection: keep-alive
+Content-Length: 63
+Sec-Ch-Ua-Platform: "macOS"
+Action: join
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://127.0.0.1:8080
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://127.0.0.1:8080/conversation
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ b'{"userid":"bbhh","robot_userid":"bbhh_robot","msg_type":"trtc"}'
+2024-11-15 16:55:55.234 | INFO     | __main__:handle_join:70 - handle_join recv json {'userid': 'bbhh', 'robot_userid': 'bbhh_robot', 'msg_type': 'trtc', 'Action': 'join'}
+2024-11-15 16:55:55.237 | INFO     | __main__:handle_join:89 - handle_join send json {'sdkappid': 1600060870, 'userid': 'bbhh', 'usersig': 'eJw1zEELgjAYgOG-IrsW*mlsuqCThzIStHnJm8vVPiQZJilF-z01vb4PvB*SnYT9Ug3ZWsSzgaytqWCp6hZv*AcptV7kWVaFMVgO3WUAwCDwYTbVG2zUKJRSb8C5t-iYqr9xGQNO6fLC*7jfH*NK*-oQxd2K84SfBRRJdE2RBm8nF6ETZnl96VNHdjvy-QEmHDFp', 'robot_userid': 'bbhh_robot', 'robot_usersig': 'eJw1zU0LgkAUheG-IrMOuX7c0YJWLVMhlFqG4uhc05wmCyv676np9n3gnA9Lgth8Cs02BrNNYCtjKpSLa0cF-SHLpDzrNmu7xe-5JVWK8kEtDgAcfA9mE70iLUZBRHvAuXfUTNVzLM5hjbhsUTmepG68O9UH0fsP5-aqpKtbGe2PsYqsIpR1nyDydxXUjQi37PsD-wc1jQ__'}
+2024-11-15 16:58:54.831 | INFO     | __main__:actions:206 - <Request 'http://192.168.1.5:8080/action' [POST]> Host: 192.168.1.5:8080
+Connection: keep-alive
+Content-Length: 63
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+Content-Type: application/json
+Action: join
+Accept: */*
+Origin: http://192.168.1.5:8080
+Referer: http://192.168.1.5:8080/conversation
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+ b'{"userid":"gdgc","robot_userid":"gdgc_robot","msg_type":"trtc"}'
+2024-11-15 16:58:54.831 | INFO     | __main__:handle_join:70 - handle_join recv json {'userid': 'gdgc', 'robot_userid': 'gdgc_robot', 'msg_type': 'trtc', 'Action': 'join'}
+2024-11-15 16:58:54.832 | INFO     | __main__:handle_join:89 - handle_join send json {'sdkappid': 1600060870, 'userid': 'gdgc', 'usersig': 'eJyrVgrxCdYrSy1SslJQMtIzUNJRAItkpqTmlWSmZUIk0lPSk2EyxSnZiQUFmSlAcUMzAwMDMwMLcwOoXGpFQWZRKkjG1NTUCCgJFS-JzAWLmhsbmpkZGhqbwMzKTAcZX*JfluTnHRzgp*0fEaZtaFyq7*Hk5p1q6Jzl4Z5vVFLokVKWYpplkpNWEGmrVAsALZ4x0g__', 'robot_userid': 'gdgc_robot', 'robot_usersig': 'eJyrVgrxCdYrSy1SslJQMtIzUNJRAItkpqTmlWSmZUIk0lPSk*OL8pPyS2DyxSnZiQUFmSlAWUMzAwMDMwMLcwOoXGpFQWZRKkjG1NTUCCgJFS-JzAWLmhsbmpkZGhqbwMzKTAdZkmfp4WrmalTpWuJSFKytXeJjFB7m4ZZR5uLoUxBgUOHnG*oaZmleGeiq7WqrVAsA0NozoA__'}
+2024-11-15 16:59:00.101 | INFO     | __main__:actions:206 - <Request 'http://192.168.1.5:8080/action' [POST]> Host: 192.168.1.5:8080
+Connection: keep-alive
+Content-Length: 63
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+Content-Type: application/json
+Action: join
+Accept: */*
+Origin: http://192.168.1.5:8080
+Referer: http://192.168.1.5:8080/conversation
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+ b'{"userid":"gdgc","robot_userid":"gdgc_robot","msg_type":"trtc"}'
+2024-11-15 16:59:00.102 | INFO     | __main__:handle_join:70 - handle_join recv json {'userid': 'gdgc', 'robot_userid': 'gdgc_robot', 'msg_type': 'trtc', 'Action': 'join'}
+2024-11-15 16:59:00.102 | INFO     | __main__:handle_join:89 - handle_join send json {'sdkappid': 1600060870, 'userid': 'gdgc', 'usersig': 'eJw1zE8LgjAYgPGvIjuHvDM3LegQFXbo0l9pN21rvC5jTI0g*u6p6fX5wfMhp93RfylH5h4JfCATry8o1bPGO-5BS30bpZImsxZl2ykHAA5xBIOpt0WnOmGMBS0Ovcayr9GUck5pOPYKdbdPQpEGlutZleydKQ55U0PK9Flk24derxqxiYtLucwNuy7I9wdAbzJl', 'robot_userid': 'gdgc_robot', 'robot_usersig': 'eJyrVgrxCdYrSy1SslJQMtIzUNJRAItkpqTmlWSmZUIk0lPSk*OL8pPyS2DyxSnZiQUFmSlAWUMzAwMDMwMLcwOoXGpFQWZRKkjG1NTUCCgJFS-JzAWLmhsbmpkZGprAxIsz00GWWEZUBOWUR3lnFIYZejo6u5lEmnq5e-lVFIf4*nmFhCSlZPok5wb6Job45Nsq1QIA6Xg00w__'}
+2024-11-15 17:49:25.003 | INFO     | __main__:<module>:251 - 
+    ***************************************************************
+                            start client.py
+    ***************************************************************
+    
+2024-11-15 17:50:33.668 | INFO     | __main__:actions:206 - <Request 'http://127.0.0.1:8080/action' [POST]> Host: 127.0.0.1:8080
+Connection: keep-alive
+Content-Length: 63
+Sec-Ch-Ua-Platform: "macOS"
+Action: join
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://127.0.0.1:8080
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://127.0.0.1:8080/conversation
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ b'{"userid":"bhed","robot_userid":"bhed_robot","msg_type":"trtc"}'
+2024-11-15 17:50:33.672 | INFO     | __main__:handle_join:70 - handle_join recv json {'userid': 'bhed', 'robot_userid': 'bhed_robot', 'msg_type': 'trtc', 'Action': 'join'}
+2024-11-15 17:50:33.677 | INFO     | __main__:handle_join:89 - handle_join send json {'sdkappid': 1600060870, 'userid': 'bhed', 'usersig': 'eJyrVgrxCdYrSy1SslJQMtIzUNJRAItkpqTmlWSmZUIkkjJSU2AyxSnZiQUFmSlAcUMzAwMDMwMLcwOoXGpFQWZRKkjG1NTUCCgJFS-JzAWLmhsbmpmZGBkbw8zKTAcZX1Sa42fk7ORbWFFaFJyW72XhnebmGple5pbqGplnaeASlefj7Wnolp1R4GirVAsAT8AyhA__', 'robot_userid': 'bhed_robot', 'robot_usersig': 'eJw1zUELgjAYxvGvIjuHvG5zk6CDCB0kBLNLp9C21oumokui6Lunptf-D57nQ06HzB10R7YOoS6QjTMXVLq2eMM-FHetLl1TNHb1XpV526Ia1RMAICCQsJh*tdjpSXzfpyMu3eJjrpJ5QnDK2LqFZjrhFQbDNQrjNE36ip6VeNt9aEQCOuJSVmXOTZyx*nk0O-L9AeGVNGY_'}
+2024-11-15 17:50:41.620 | INFO     | __main__:actions:206 - <Request 'http://127.0.0.1:8080/action' [POST]> Host: 127.0.0.1:8080
+Connection: keep-alive
+Content-Length: 63
+Sec-Ch-Ua-Platform: "macOS"
+Action: join
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://127.0.0.1:8080
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://127.0.0.1:8080/conversation
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ b'{"userid":"bhed","robot_userid":"bhed_robot","msg_type":"trtc"}'
+2024-11-15 17:50:41.621 | INFO     | __main__:handle_join:70 - handle_join recv json {'userid': 'bhed', 'robot_userid': 'bhed_robot', 'msg_type': 'trtc', 'Action': 'join'}
+2024-11-15 17:50:41.622 | INFO     | __main__:handle_join:89 - handle_join send json {'sdkappid': 1600060870, 'userid': 'bhed', 'usersig': 'eJw1zE0LgjAcgPGvIjuHbe5FCTxEQQdTomWela38J8WyZVL03VPT6-OD54MOW*k2ukYLB3kuRjNnKKD0zcIJ-lCUWk3yUFVuDKiuE4ExFjjw8Wi6NVDrXjjnXodjt3Adqk*JEMxjZHrBud83Mn7blKmnvGTr176lm2QXzUsakWOtg6SNK7Mq0vzeZMsQfX9OnTLA', 'robot_userid': 'bhed_robot', 'robot_usersig': 'eJyrVgrxCdYrSy1SslJQMtIzUNJRAItkpqTmlWSmZUIkkjJSU*KL8pPyS2DyxSnZiQUFmSlAWUMzAwMDMwMLcwOoXGpFQWZRKkjG1NTUCCgJFS-JzAWLmhsbmpmZGJkYwszKTAdZEhVhmJFZ7hRRZlRcUugdmF5sWpDs5etYVqbtlGLkk66f7m6em*qT4mnsbGGrVAsA*Cc0ug__'}
+2024-11-15 17:50:43.236 | INFO     | __main__:actions:206 - <Request 'http://127.0.0.1:8080/action' [POST]> Host: 127.0.0.1:8080
+Connection: keep-alive
+Content-Length: 63
+Sec-Ch-Ua-Platform: "macOS"
+Action: join
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://127.0.0.1:8080
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://127.0.0.1:8080/conversation
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ b'{"userid":"bhed","robot_userid":"bhed_robot","msg_type":"trtc"}'
+2024-11-15 17:50:43.236 | INFO     | __main__:handle_join:70 - handle_join recv json {'userid': 'bhed', 'robot_userid': 'bhed_robot', 'msg_type': 'trtc', 'Action': 'join'}
+2024-11-15 17:50:43.237 | INFO     | __main__:handle_join:89 - handle_join send json {'sdkappid': 1600060870, 'userid': 'bhed', 'usersig': 'eJyrVgrxCdYrSy1SslJQMtIzUNJRAItkpqTmlWSmZUIkkjJSU2AyxSnZiQUFmSlAcUMzAwMDMwMLcwOoXGpFQWZRKkjG1NTUCCgJFS-JzAWLmhsbmpmZGJkYw8zKTAcZH1JeXFkZ4O1Vaqgf5ZYcmpzs4pToUpBqVF5W6maRbVHimh6S5RNQUFwe6WmrVAsAVa8zIA__', 'robot_userid': 'bhed_robot', 'robot_usersig': 'eJw1zUELgjAYxvGvIjuHvZtzRtCpkJIgQuvQJVxb*RZOMYtJ9N1T0*v-B8-zIck2dt*6InOHMBfIxOkLKm1qvOIfZKbVuSpkUY-*VI*0LFG1SgUACJgFMJi2JVa6E9-3WYtDrzHva*BRITjj3riFt*7kcs-i1SmPGpku40PCdorSsJFHUIZbm2fR9LXhzKxDs1*Q7w-zdDTb'}
+2024-11-15 17:50:59.302 | INFO     | __main__:actions:206 - <Request 'http://192.168.1.5:8080/action' [POST]> Host: 192.168.1.5:8080
+Connection: keep-alive
+Content-Length: 63
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+Content-Type: application/json
+Action: join
+Accept: */*
+Origin: http://192.168.1.5:8080
+Referer: http://192.168.1.5:8080/transcription
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+ b'{"userid":"ebgd","robot_userid":"ebgd_robot","msg_type":"trtc"}'
+2024-11-15 17:50:59.303 | INFO     | __main__:handle_join:70 - handle_join recv json {'userid': 'ebgd', 'robot_userid': 'ebgd_robot', 'msg_type': 'trtc', 'Action': 'join'}
+2024-11-15 17:50:59.303 | INFO     | __main__:handle_join:89 - handle_join send json {'sdkappid': 1600060870, 'userid': 'ebgd', 'usersig': 'eJyrVgrxCdYrSy1SslJQMtIzUNJRAItkpqTmlWSmZUIkUpPSU2AyxSnZiQUFmSlAcUMzAwMDMwMLcwOoXGpFQWZRKkjG1NTUCCgJFS-JzAWLmhsbmpmZGJlawszKTAcZH2JSWFLpVegX4hLpkZ9mqe3vU1wc5eOY5lYe5FJQ6p9fZpGYFlZVHGyWbmGrVAsAUScy*A__', 'robot_userid': 'ebgd_robot', 'robot_usersig': 'eJyrVgrxCdYrSy1SslJQMtIzUNJRAItkpqTmlWSmZUIkUpPSU*KL8pPyS2DyxSnZiQUFmSlAWUMzAwMDMwMLcwOoXGpFQWZRKkjG1NTUCCgJFS-JzAWLmhsbmpmZGJlawszKTAdZYhhmUOhmoB2RkeNRWWLu65mY4xWZ51wRHFCUH1joHxBh6JQXXFKUmupaUmyrVAsA6mk1VQ__'}
+2024-11-15 17:51:09.806 | INFO     | __main__:actions:206 - <Request 'http://192.168.1.5:8080/action' [POST]> Host: 192.168.1.5:8080
+Connection: keep-alive
+Content-Length: 63
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+Content-Type: application/json
+Action: join
+Accept: */*
+Origin: http://192.168.1.5:8080
+Referer: http://192.168.1.5:8080/transcription
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+ b'{"userid":"ebgd","robot_userid":"ebgd_robot","msg_type":"trtc"}'
+2024-11-15 17:51:09.806 | INFO     | __main__:handle_join:70 - handle_join recv json {'userid': 'ebgd', 'robot_userid': 'ebgd_robot', 'msg_type': 'trtc', 'Action': 'join'}
+2024-11-15 17:51:09.806 | INFO     | __main__:handle_join:89 - handle_join send json {'sdkappid': 1600060870, 'userid': 'ebgd', 'usersig': 'eJyrVgrxCdYrSy1SslJQMtIzUNJRAItkpqTmlWSmZUIkUpPSU2AyxSnZiQUFmSlAcUMzAwMDMwMLcwOoXGpFQWZRKkjG1NTUCCgJFS-JzAWLmhsbmpmZGJlZwszKTAcZHxQVqF9iVO5XlR2Qm*KaX*hYXGCWGujvlG1mqZ3qXGXqH1bg7Ozt41Lqmm2rVAsASJcyTg__', 'robot_userid': 'ebgd_robot', 'robot_usersig': 'eJyrVgrxCdYrSy1SslJQMtIzUNJRAItkpqTmlWSmZUIkUpPSU*KL8pPyS2DyxSnZiQUFmSlAWUMzAwMDMwMLcwOoXGpFQWZRKkjG1NTUCCgJFS-JzAWLmhsbmpmZGJlZwszKTAdZ4hRcXuVUlmKUXxgU5G1e5WocmO4Z7hdWXlpSUZptEejqo2*S7eWSaOiW42irVAsA*r409A__'}
+2024-11-15 17:53:46.124 | INFO     | __main__:<module>:251 - 
+    ***************************************************************
+                            start client.py
+    ***************************************************************
+    
+2024-11-15 17:54:50.432 | INFO     | __main__:actions:206 - <Request 'http://192.168.1.5:8080/action' [POST]> Host: 192.168.1.5:8080
+Connection: keep-alive
+Content-Length: 63
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+Content-Type: application/json
+Action: join
+Accept: */*
+Origin: http://192.168.1.5:8080
+Referer: http://192.168.1.5:8080/conversation
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+ b'{"userid":"jhhd","robot_userid":"jhhd_robot","msg_type":"trtc"}'
+2024-11-15 17:54:50.432 | INFO     | __main__:handle_join:70 - handle_join recv json {'userid': 'jhhd', 'robot_userid': 'jhhd_robot', 'msg_type': 'trtc', 'Action': 'join'}
+2024-11-15 17:54:50.433 | INFO     | __main__:handle_join:89 - handle_join send json {'sdkappid': 1600060870, 'userid': 'jhhd', 'usersig': 'eJw1zM0KgkAUQOFXkVmH3NH50cBNtJKIwlq4FGbUa6iDM4QSvXtquj0fnA95XDL-rQdy9EjgAzl4a0GlO4cl-qGpa7WLVa-CGFRzpwIABEQSNtOjwUEvwjkPZty6w3atMqRCMBbv3WK17HkZ950NTZWPUKhWTtdTM-Ush-R2P6ccC0odfYpMRZCQ7w9LYDHV', 'robot_userid': 'jhhd_robot', 'robot_usersig': 'eJyrVgrxCdYrSy1SslJQMtIzUNJRAItkpqTmlWSmZUIksjIyUuKL8pPyS2DyxSnZiQUFmSlAWUMzAwMDMwMLcwOoXGpFQWZRKkjG1NTUCCgJFS-JzAWLmhsbmpmZmFjCxIsz00GWmHsX5hUEV0QZGup7Rvn6Z0QZlZRG5jgmZwUb6ftWWjgbebuGJpaVejmHR9oq1QIA7Oc0jA__'}
+2024-11-15 17:54:52.441 | INFO     | __main__:actions:206 - <Request 'http://192.168.1.5:8080/action' [POST]> Host: 192.168.1.5:8080
+Connection: keep-alive
+Content-Length: 63
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+Content-Type: application/json
+Action: join
+Accept: */*
+Origin: http://192.168.1.5:8080
+Referer: http://192.168.1.5:8080/conversation
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+
+ b'{"userid":"jhhd","robot_userid":"jhhd_robot","msg_type":"trtc"}'
+2024-11-15 17:54:52.442 | INFO     | __main__:handle_join:70 - handle_join recv json {'userid': 'jhhd', 'robot_userid': 'jhhd_robot', 'msg_type': 'trtc', 'Action': 'join'}
+2024-11-15 17:54:52.442 | INFO     | __main__:handle_join:89 - handle_join send json {'sdkappid': 1600060870, 'userid': 'jhhd', 'usersig': 'eJw1zMEKgkAUQNFfkVmHPMeZpwUuCkLKRCtX7oSZ9CWFqZQU-Xtqur0H7oclh7P51DVbGYybwBbGWEjpe0sX*sO1KNQsjSqzqiLVdwsBAMF1YDLdVVTrQaSUvMept3Qbq2NbiEIs*fyifNivEaN29*INPLI83ieBK8rUP25D335HGGhHp7KLxanehB77-gAxQTFz', 'robot_userid': 'jhhd_robot', 'robot_usersig': 'eJyrVgrxCdYrSy1SslJQMtIzUNJRAItkpqTmlWSmZUIksjIyUuKL8pPyS2DyxSnZiQUFmSlAWUMzAwMDMwMLcwOoXGpFQWZRKkjG1NTUCCgJFS-JzAWLmhsbmpmZmFgawczKTAdZ4liRae5mqe2RGZkeZpjqbZhs4O2TU5Je4W8ZUmIQ4pvq5J7vb*GT4RxRZWKrVAsA4n80Sg__'}
+2024-11-15 17:56:20.301 | INFO     | __main__:actions:206 - <Request 'http://127.0.0.1:8080/action' [POST]> Host: 127.0.0.1:8080
+Connection: keep-alive
+Content-Length: 63
+Sec-Ch-Ua-Platform: "macOS"
+Action: join
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://127.0.0.1:8080
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://127.0.0.1:8080/conversation
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ b'{"userid":"dhhh","robot_userid":"dhhh_robot","msg_type":"trtc"}'
+2024-11-15 17:56:20.302 | INFO     | __main__:handle_join:70 - handle_join recv json {'userid': 'dhhh', 'robot_userid': 'dhhh_robot', 'msg_type': 'trtc', 'Action': 'join'}
+2024-11-15 17:56:20.302 | INFO     | __main__:handle_join:89 - handle_join send json {'sdkappid': 1600060870, 'userid': 'dhhh', 'usersig': 'eJw1zEELgjAYgOG-IrsW8qltk6BbeLII1KJu0Wb7qsXYbAbRf09Nr*8D74eUeRF6ackyIHEIZB4MBYV8NljjH4RSahIn7mdjUHQ9YgDAIOUwmnwbtLIXSmnc4dgb1EPlScTYgqZTd3jt9*t96jIrH6*bk7tWJ6et8LOiylil2aGkba79hVq*gfq4It8fWDoysg__', 'robot_userid': 'dhhh_robot', 'robot_usersig': 'eJyrVgrxCdYrSy1SslJQMtIzUNJRAItkpqTmlWSmZUIkUjIyMuKL8pPyS2DyxSnZiQUFmSlAWUMzAwMDMwMLcwOoXGpFQWZRKkjG1NTUCCgJFS-JzAWLmhsbmpmZmFrAxIsz00GWeDvlBBSGhBr7eOXkRjn6ppoXFJv4hXh4GWb5lWe65rrlGpsWpSYGJUemudoq1QIA7yM02g__'}
+2024-11-15 18:01:16.204 | INFO     | __main__:<module>:251 - 
+    ***************************************************************
+                            start client.py
+    ***************************************************************
+    
+2024-11-15 18:02:25.955 | INFO     | __main__:actions:206 - <Request 'http://127.0.0.1:8080/action' [POST]> Host: 127.0.0.1:8080
+Connection: keep-alive
+Content-Length: 63
+Sec-Ch-Ua-Platform: "macOS"
+Action: join
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://127.0.0.1:8080
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://127.0.0.1:8080/conversation
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ b'{"userid":"jjdc","robot_userid":"jjdc_robot","msg_type":"trtc"}'
+2024-11-15 18:02:25.955 | INFO     | __main__:handle_join:70 - handle_join recv json {'userid': 'jjdc', 'robot_userid': 'jjdc_robot', 'msg_type': 'trtc', 'Action': 'join'}
+2024-11-15 18:02:25.956 | INFO     | __main__:handle_join:89 - handle_join send json {'sdkappid': 1600060870, 'userid': 'jjdc', 'usersig': 'eJyrVgrxCdYrSy1SslJQMtIzUNJRAItkpqTmlWSmZUIksrJSkmEyxSnZiQUFmSlAcUMzAwMDMwMLcwOoXGpFQWZRKkjG1NTUCCgJFS-JzAWLmhsbmpmZWJqYwszKTAcZX5Ka7*iSbeadZJHkaukemFvlUZ5T7hSUlpHjou-i7JVpaZJnkWxY6examm2rVAsASmAyVQ__', 'robot_userid': 'jjdc_robot', 'robot_usersig': 'eJw1zUELgjAYxvGvIjuHbcttGXTKoMgEq0N4idZWvItU3JQg*u6p6fX-g*f5oFN89BtdoYWHqI-RxOsLKJ07uMMfjFG3S1XIwo1u1fNalqBaJRxjzPFc4MH0u4RKd8IYoy0O3cGrr2JGOA-CgI1b8OhORB4l9Vms6HZjm8RNxd5SaUxIQpbGOmNUROs6k3J3SJfo*wPaJzPZ'}
+2024-11-15 18:02:27.611 | INFO     | __main__:actions:206 - <Request 'http://127.0.0.1:8080/action' [POST]> Host: 127.0.0.1:8080
+Connection: keep-alive
+Content-Length: 63
+Sec-Ch-Ua-Platform: "macOS"
+Action: join
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://127.0.0.1:8080
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://127.0.0.1:8080/conversation
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ b'{"userid":"jjdc","robot_userid":"jjdc_robot","msg_type":"trtc"}'
+2024-11-15 18:02:27.611 | INFO     | __main__:handle_join:70 - handle_join recv json {'userid': 'jjdc', 'robot_userid': 'jjdc_robot', 'msg_type': 'trtc', 'Action': 'join'}
+2024-11-15 18:02:27.612 | INFO     | __main__:handle_join:89 - handle_join send json {'sdkappid': 1600060870, 'userid': 'jjdc', 'usersig': 'eJyrVgrxCdYrSy1SslJQMtIzUNJRAItkpqTmlWSmZUIksrJSkmEyxSnZiQUFmSlAcUMzAwMDMwMLcwOoXGpFQWZRKkjG1NTUCCgJFS-JzAWLmhsbmpmZWJqYw8zKTAcZn56bX1pskezq4lLuq61f4OWZpJ1VXGWUFpHhmRlWVhiZ7eKUW*RSbFbm6WurVAsAWIIzAQ__', 'robot_userid': 'jjdc_robot', 'robot_usersig': 'eJyrVgrxCdYrSy1SslJQMtIzUNJRAItkpqTmlWSmZUIksrJSkuOL8pPyS2DyxSnZiQUFmSlAWUMzAwMDMwMLcwOoXGpFQWZRKkjG1NTUCCgJFS-JzAWLmhsbmpmZWJqYw8zKTAdZ4lJYbBBVpB3mFeIYVmWaW*aRFhBkGZHiFOhaaZFvHmSg75idn5Ht5RqWVm6rVAsA7sk0xg__'}
+2024-11-15 18:02:27.813 | INFO     | __main__:actions:206 - <Request 'http://127.0.0.1:8080/action' [POST]> Host: 127.0.0.1:8080
+Connection: keep-alive
+Content-Length: 63
+Sec-Ch-Ua-Platform: "macOS"
+Action: join
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://127.0.0.1:8080
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://127.0.0.1:8080/conversation
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ b'{"userid":"jjdc","robot_userid":"jjdc_robot","msg_type":"trtc"}'
+2024-11-15 18:02:27.813 | INFO     | __main__:handle_join:70 - handle_join recv json {'userid': 'jjdc', 'robot_userid': 'jjdc_robot', 'msg_type': 'trtc', 'Action': 'join'}
+2024-11-15 18:02:27.814 | INFO     | __main__:handle_join:89 - handle_join send json {'sdkappid': 1600060870, 'userid': 'jjdc', 'usersig': 'eJyrVgrxCdYrSy1SslJQMtIzUNJRAItkpqTmlWSmZUIksrJSkmEyxSnZiQUFmSlAcUMzAwMDMwMLcwOoXGpFQWZRKkjG1NTUCCgJFS-JzAWLmhsbmpmZWJqYw8zKTAcZn56bX1pskezq4lLuq61f4OWZpJ1VXGWUFpHhmRlWVhiZ7eKUW*RSbFbm6WurVAsAWIIzAQ__', 'robot_userid': 'jjdc_robot', 'robot_usersig': 'eJyrVgrxCdYrSy1SslJQMtIzUNJRAItkpqTmlWSmZUIksrJSkuOL8pPyS2DyxSnZiQUFmSlAWUMzAwMDMwMLcwOoXGpFQWZRKkjG1NTUCCgJFS-JzAWLmhsbmpmZWJqYw8zKTAdZ4lJYbBBVpB3mFeIYVmWaW*aRFhBkGZHiFOhaaZFvHmSg75idn5Ht5RqWVm6rVAsA7sk0xg__'}
+2024-11-15 18:02:27.947 | INFO     | __main__:actions:206 - <Request 'http://127.0.0.1:8080/action' [POST]> Host: 127.0.0.1:8080
+Connection: keep-alive
+Content-Length: 63
+Sec-Ch-Ua-Platform: "macOS"
+Action: join
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+Sec-Ch-Ua: "Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"
+Content-Type: application/json
+Sec-Ch-Ua-Mobile: ?0
+Accept: */*
+Origin: http://127.0.0.1:8080
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://127.0.0.1:8080/conversation
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: zh-CN,zh;q=0.9
+
+ b'{"userid":"jjdc","robot_userid":"jjdc_robot","msg_type":"trtc"}'
+2024-11-15 18:02:27.948 | INFO     | __main__:handle_join:70 - handle_join recv json {'userid': 'jjdc', 'robot_userid': 'jjdc_robot', 'msg_type': 'trtc', 'Action': 'join'}
+2024-11-15 18:02:27.948 | INFO     | __main__:handle_join:89 - handle_join send json {'sdkappid': 1600060870, 'userid': 'jjdc', 'usersig': 'eJyrVgrxCdYrSy1SslJQMtIzUNJRAItkpqTmlWSmZUIksrJSkmEyxSnZiQUFmSlAcUMzAwMDMwMLcwOoXGpFQWZRKkjG1NTUCCgJFS-JzAWLmhsbmpmZWJqYw8zKTAcZn56bX1pskezq4lLuq61f4OWZpJ1VXGWUFpHhmRlWVhiZ7eKUW*RSbFbm6WurVAsAWIIzAQ__', 'robot_userid': 'jjdc_robot', 'robot_usersig': 'eJyrVgrxCdYrSy1SslJQMtIzUNJRAItkpqTmlWSmZUIksrJSkuOL8pPyS2DyxSnZiQUFmSlAWUMzAwMDMwMLcwOoXGpFQWZRKkjG1NTUCCgJFS-JzAWLmhsbmpmZWJqYw8zKTAdZ4lJYbBBVpB3mFeIYVmWaW*aRFhBkGZHiFOhaaZFvHmSg75idn5Ht5RqWVm6rVAsA7sk0xg__'}
